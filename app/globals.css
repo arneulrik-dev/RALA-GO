@@ -4,3 +4,5 @@
 .userAdmin{max-width:680px;margin:0 auto}.userForm{display:grid;gap:12px}.userForm input,.userForm select{padding:14px;border:1px solid #ccd5db;border-radius:10px;font:inherit;background:#fff}
 
 .tempPasswordWrap{position:relative}.tempPasswordWrap input{width:100%;padding-right:80px}.tempPasswordToggle{position:absolute;right:8px;top:50%;transform:translateY(-50%);background:transparent;padding:8px;color:var(--navy)}
+
+.approvalLimitField{display:grid;gap:8px}.approvalLimitField label{display:grid;gap:4px}.approvalLimitField label small{color:#687985;font-weight:400}.moneyInput{position:relative}.moneyInput input{width:100%;padding-right:52px}.moneyInput span{position:absolute;right:14px;top:50%;transform:translateY(-50%);font-weight:700;color:#687985}

@@ -1,0 +1,19 @@
+{
+  "name": "RALA GO",
+  "short_name": "RALA GO",
+  "description": "Proffhandel gjort enkelt",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#10263b",
+  "theme_color": "#10263b",
+  "lang": "no",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

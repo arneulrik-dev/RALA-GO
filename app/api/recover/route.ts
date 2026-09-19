@@ -33,7 +33,7 @@ export async function POST(req: Request) {
     const actionLink = data.action_link || data.properties?.action_link;
     if (!actionLink) return generic();
 
-    const redirectTo = new URL("/", req.url).origin;
+    const redirectTo = "https://rala-go.vercel.app";
     const recoveryUrl = new URL(actionLink);
     recoveryUrl.searchParams.set("redirect_to", redirectTo);
 

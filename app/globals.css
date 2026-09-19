@@ -2,3 +2,5 @@
 .secondaryAuth{width:100%;margin-top:9px;background:transparent;border:1px solid #ccd5db;color:var(--navy)}button:disabled{opacity:.6;cursor:wait}
 .passwordWrap{position:relative}.passwordWrap input{width:100%;padding-right:100px}.showPassword{position:absolute;right:8px;top:50%;transform:translateY(-50%);border:0;background:transparent;font-weight:700;cursor:pointer}.forgotPassword{width:100%;margin-top:8px;border:0;background:transparent;text-decoration:underline;cursor:pointer}
 .userAdmin{max-width:680px;margin:0 auto}.userForm{display:grid;gap:12px}.userForm input,.userForm select{padding:14px;border:1px solid #ccd5db;border-radius:10px;font:inherit;background:#fff}
+
+.tempPasswordWrap{position:relative}.tempPasswordWrap input{width:100%;padding-right:80px}.tempPasswordToggle{position:absolute;right:8px;top:50%;transform:translateY(-50%);background:transparent;padding:8px;color:var(--navy)}

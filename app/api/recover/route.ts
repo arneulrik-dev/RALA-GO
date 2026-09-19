@@ -1,4 +1,5 @@
 // RALA GO recovery endpoint
+// Environment refresh 2
 import { NextResponse } from "next/server";
 
 const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL!;

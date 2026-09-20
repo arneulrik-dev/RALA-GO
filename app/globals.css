@@ -66,3 +66,5 @@ html:not(.dark) .loginCard .brand img{filter:drop-shadow(0 0 0 #10263b) contrast
 
 /* Keep QR close control visible in dark mode */
 .dark .qrModal .detailHead button{background:#263844;color:#f4f8fa;border:1px solid #5f7482;border-radius:10px;padding:9px 12px;font-weight:800}.dark .qrModal .detailHead button:hover{background:#314957}
+
+.qrResult{padding:12px 0 2px}.qrResult>small{font-weight:800;opacity:.7}.qrResult>h3{font-size:24px;margin:7px 0}.qrActions{display:grid;gap:10px;margin-top:18px}.qrActions button{width:100%;padding:13px 15px;border-radius:11px;font-weight:800}.qrProductInfo{display:grid;gap:5px;margin-top:14px;padding:14px;border-radius:12px;background:#eef3f6}.qrProductInfo p{margin:4px 0}.dark .qrProductInfo{background:#22333f}.dark .qrActions button:not(.primary){background:#263844;color:#f4f8fa;border:1px solid #5f7482}

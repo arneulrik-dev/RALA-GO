@@ -16,14 +16,14 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: "E-posttjenesten er ikke ferdig konfigurert." }, { status: 500 });
     }
 
-    const generate = await fetch(`${SUPABASE_URL}/auth/v1/admin/generate_link`, {
+    // Resolve the external recovery address to the RALA GO profile/Auth account.\n    const lookup = await fetch(`${SUPABASE_URL}/rest/v1/profiles?select=id,notification_email&notification_email=ilike.${encodeURIComponent(email.trim())}&limit=1`, {\n      headers: { apikey: SUPABASE_SECRET_KEY, Authorization: `Bearer ${SUPABASE_SECRET_KEY}` },\n    });\n    if (!lookup.ok) { console.error("Recovery profile lookup failed", lookup.status); return generic(); }\n    const profiles = await lookup.json();\n    const profile = profiles?.[0];\n    if (!profile?.id) return generic();\n\n    const authUser = await fetch(`${SUPABASE_URL}/auth/v1/admin/users/${profile.id}`, {\n      headers: { apikey: SUPABASE_SECRET_KEY, Authorization: `Bearer ${SUPABASE_SECRET_KEY}` },\n    });\n    if (!authUser.ok) { console.error("Recovery auth lookup failed", authUser.status); return generic(); }\n    const authData = await authUser.json();\n    const authEmail = authData?.email;\n    if (!authEmail) return generic();\n\n    const generate = await fetch(`${SUPABASE_URL}/auth/v1/admin/generate_link`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
         apikey: SUPABASE_SECRET_KEY,
         Authorization: `Bearer ${SUPABASE_SECRET_KEY}`,
       },
-      body: JSON.stringify({ type: "recovery", email }),
+      body: JSON.stringify({ type: "recovery", email: authEmail }),
     });
     if (!generate.ok) {
       console.error("Recovery link generation failed", generate.status);

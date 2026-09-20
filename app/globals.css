@@ -39,3 +39,6 @@ button.userCard{width:100%;font:inherit;text-align:left;color:inherit}.userCard{
 
 /* Complete dark-mode contrast pass */
 .dark main,.dark .content,.dark .userAdmin{color:#e7edf2}.dark h1,.dark h2,.dark h3,.dark h4,.dark strong,.dark b,.dark label{color:#f3f7fa}.dark p,.dark small,.dark .top small,.dark .approval small,.dark .moneyInput span{color:#b9c8d2}.dark button:not(.primary):not(.approve):not(.danger):not(.active):not(.flagButton):not(.moreButton){color:#e7edf2}.dark .list button,.dark .settings button{color:#e7edf2}.dark .activeStatus{background:#193a2b;color:#9be0b8}.dark .inactiveStatus{background:#44282b;color:#f2b5ba}.dark input::placeholder,.dark textarea::placeholder{color:#91a3af;opacity:1}.dark select option{background:#17232d;color:#e7edf2}.dark .orderCard small,.dark .orderMeta small,.dark .detailHead small,.dark .detailTotal span{color:#b9c8d2}
+
+/* Dark-mode action controls */
+.dark .cartQty button,.dark .quantityPicker button,.dark .cancelQuantity{background:#2b3d49!important;color:#f4f8fa!important;border:1px solid #526674!important}.dark .cartQty button:hover,.dark .quantityPicker button:hover,.dark .cancelQuantity:hover{background:#38505f!important}.dark .cartQty strong{color:#f4f8fa!important}

@@ -86,3 +86,9 @@ html:not(.dark) .loginCard .brand img{filter:drop-shadow(0 0 0 #10263b) contrast
 .dark .userAdmin .authMessage{background:#263844;color:#f4f8fa;border-color:#526875}
 .dark .userAdmin .status.activeStatus{background:#193a2b;color:#a8e6c0}
 .dark .userAdmin .status.inactiveStatus{background:#44282b;color:#ffc0c4}
+
+.permissionToggle{display:grid;grid-template-columns:auto 1fr;gap:3px 10px;align-items:center;padding:13px;border:1px solid #cbd8e0;border-radius:12px;background:#f4f7f9}
+.permissionToggle input{grid-row:1/3;width:20px;height:20px;accent-color:#2f8ed0}
+.permissionToggle span{display:grid;gap:3px}.permissionToggle small{font-weight:400;color:#687985}
+.dark .permissionToggle{background:#263844;border-color:#526875;color:#f4f8fa}
+.dark .permissionToggle small{color:#b9c7d1}

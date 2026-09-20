@@ -97,3 +97,11 @@ html:not(.dark) .loginCard .brand img{filter:drop-shadow(0 0 0 #10263b) contrast
 .permissionStatus small{font-weight:800;color:#687985}.permissionStatus b{font-size:13px}
 .dark .permissionStatus{background:#22313d;border-color:#3a4b58}.dark .permissionStatus small{color:#b9c7d1}.dark .permissionStatus b{color:#f4f8fa}
 .editUserForm .permissionToggle{grid-column:1/-1}
+
+.notifyBadge{position:absolute;right:-7px;top:-7px;min-width:18px;height:18px;padding:0 5px;border-radius:10px;background:#e74b3c;color:#fff;font-size:11px;font-weight:900;display:flex;align-items:center;justify-content:center;border:2px solid #fff}
+.notifyHead{display:flex;align-items:center;justify-content:space-between;padding:2px 3px 7px}.notifyHead small{color:#687985}
+.notifyPanel .notificationItem{display:flex;align-items:center;justify-content:space-between;gap:10px;border:1px solid #e0e7eb;background:#fff}
+.notifyPanel .notificationItem span{display:grid;gap:3px}.notifyPanel .notificationItem small{font-size:11px;color:#687985}.notifyPanel .notificationItem.unread{background:#eef7fd;border-color:#a9d2ee}.notifyPanel .notificationItem.read{opacity:.72}
+.notifyPanel .notificationItem i{width:9px;height:9px;min-width:9px;border-radius:50%;background:#e74b3c}.noNotifications{padding:12px 4px;color:#687985}
+.dark .notifyBadge{border-color:#17232d}.dark .notifyHead small,.dark .notifyPanel .notificationItem small,.dark .noNotifications{color:#b9c7d1}
+.dark .notifyPanel .notificationItem{border-color:#526875}.dark .notifyPanel .notificationItem.unread{background:#21445b;border-color:#5aaee5}.dark .notifyPanel .notificationItem.read{background:#263844}

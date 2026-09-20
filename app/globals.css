@@ -43,4 +43,6 @@ button.userCard{width:100%;font:inherit;text-align:left;color:inherit}.userCard{
 /* Dark-mode action controls */
 .dark .cartQty button,.dark .quantityPicker button,.dark .cancelQuantity{background:#2b3d49!important;color:#f4f8fa!important;border:1px solid #526674!important}.dark .cartQty button:hover,.dark .quantityPicker button:hover,.dark .cancelQuantity:hover{background:#38505f!important}.dark .cartQty strong{color:#f4f8fa!important}
 
-.brand{display:flex;align-items:center}.brand img{display:block;width:150px;height:auto;max-height:48px;object-fit:contain}.dark header .brand img{filter:brightness(0) invert(1)}.loginCard .brand img{width:190px;max-height:64px}@media(max-width:520px){header .brand img{width:118px;max-height:40px}.loginCard .brand img{width:165px}}
+.brand{display:flex;align-items:center}.brand img{display:block;width:150px;height:auto;max-height:48px;object-fit:contain}.loginCard .brand img{width:190px;max-height:64px}@media(max-width:520px){header .brand img{width:118px;max-height:40px}.loginCard .brand img{width:165px}}
+
+header .brand img{width:175px;max-height:58px}.dark header .brand img{filter:none!important}@media(max-width:520px){header .brand img{width:138px;max-height:46px}}

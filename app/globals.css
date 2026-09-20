@@ -92,3 +92,8 @@ html:not(.dark) .loginCard .brand img{filter:drop-shadow(0 0 0 #10263b) contrast
 .permissionToggle span{display:grid;gap:3px}.permissionToggle small{font-weight:400;color:#687985}
 .dark .permissionToggle{background:#263844;border-color:#526875;color:#f4f8fa}
 .dark .permissionToggle small{color:#b9c7d1}
+
+.permissionStatus{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 14px;margin:0 0 16px;border:1px solid #dce4e9;border-radius:10px;background:#f4f7f9}
+.permissionStatus small{font-weight:800;color:#687985}.permissionStatus b{font-size:13px}
+.dark .permissionStatus{background:#22313d;border-color:#3a4b58}.dark .permissionStatus small{color:#b9c7d1}.dark .permissionStatus b{color:#f4f8fa}
+.editUserForm .permissionToggle{grid-column:1/-1}

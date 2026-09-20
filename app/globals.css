@@ -112,3 +112,18 @@ html:not(.dark) .loginCard .brand img{filter:drop-shadow(0 0 0 #10263b) contrast
 @media(max-width:600px){.notifyButton .notifyBadge{display:flex!important;position:absolute!important;right:-8px!important;top:-8px!important;min-width:20px;height:20px;font-size:11px}.notifyPanel span{display:grid}}
 
 .loginLanguages{display:flex;justify-content:center;gap:7px;flex-wrap:wrap;margin:14px 0 20px}.loginLanguages button{font-size:22px;line-height:1;padding:7px 9px;border:1px solid #dce4e9;border-radius:9px;background:#fff;cursor:pointer}.loginLanguages button:hover{transform:translateY(-1px)}.loginLanguages button.active{border-color:#1677b8;box-shadow:0 0 0 2px #1677b822}.dark .loginCard{background:#17232d;color:#e7edf2}.dark .loginCard p{color:#aebdc8}.dark .loginCard input{background:#101820;color:#e7edf2;border-color:#3a4b58}.dark .loginLanguages button{background:#101820;border-color:#3a4b58}.dark .loginLanguages button.active{border-color:#5ba9df;box-shadow:0 0 0 2px #5ba9df33}
+
+
+/* Inline user profile: keep the opened profile visually attached to the selected user */
+.inlineUserDetail{margin:-2px 0 12px;border-top-left-radius:8px;border-top-right-radius:8px}
+.userList>div:has(.inlineUserDetail)>button.userCard{border-bottom-left-radius:6px;border-bottom-right-radius:6px;border-color:#9bc8e5}
+@media(max-width:600px){
+  .inlineUserDetail{padding:14px;margin:-3px 0 10px}
+  .inlineUserDetail .detailHead h3{font-size:20px}
+  .inlineUserDetail .detailGrid{margin:14px 0;gap:7px}
+  .inlineUserDetail .detailGrid>div{padding:10px}
+  .inlineUserDetail h4{margin:14px 0 8px}
+  .inlineUserDetail .historyList{max-height:210px;overflow:auto}
+  .inlineUserDetail .historyList>div{padding:9px 10px;gap:4px}
+  .inlineUserDetail .dangerZone{margin-top:14px;padding-top:12px}
+}

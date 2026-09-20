@@ -110,3 +110,5 @@ html:not(.dark) .loginCard .brand img{filter:drop-shadow(0 0 0 #10263b) contrast
 .notifyWrap,.notifyButton{overflow:visible!important}
 .notifyBadge{z-index:60;visibility:visible!important;opacity:1!important;line-height:14px}
 @media(max-width:600px){.notifyButton .notifyBadge{display:flex!important;position:absolute!important;right:-8px!important;top:-8px!important;min-width:20px;height:20px;font-size:11px}.notifyPanel span{display:grid}}
+
+.loginLanguages{display:flex;justify-content:center;gap:7px;flex-wrap:wrap;margin:14px 0 20px}.loginLanguages button{font-size:22px;line-height:1;padding:7px 9px;border:1px solid #dce4e9;border-radius:9px;background:#fff;cursor:pointer}.loginLanguages button:hover{transform:translateY(-1px)}.loginLanguages button.active{border-color:#1677b8;box-shadow:0 0 0 2px #1677b822}.dark .loginCard{background:#17232d;color:#e7edf2}.dark .loginCard p{color:#aebdc8}.dark .loginCard input{background:#101820;color:#e7edf2;border-color:#3a4b58}.dark .loginLanguages button{background:#101820;border-color:#3a4b58}.dark .loginLanguages button.active{border-color:#5ba9df;box-shadow:0 0 0 2px #5ba9df33}

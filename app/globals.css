@@ -212,3 +212,12 @@ html:not(.dark) .loginCard .brand img{filter:drop-shadow(0 0 0 #10263b) contrast
 
 /* Compact visible-flag language picker */
 .loginLanguageFlag{position:relative;display:flex;justify-content:center;margin:12px 0 18px}.languageFlagButton{width:52px;height:42px;padding:4px;border:1px solid #d5dfe6;border-radius:11px;background:#fff;font-size:27px;line-height:1;cursor:pointer}.languageFlagMenu{position:absolute;top:48px;left:50%;transform:translateX(-50%);z-index:30;width:190px;padding:7px;border:1px solid #d5dfe6;border-radius:12px;background:#fff;box-shadow:0 10px 30px rgba(0,0,0,.14)}.languageFlagMenu button{width:100%;display:flex;align-items:center;gap:10px;padding:9px 10px;border:0;border-radius:8px;background:transparent;color:#17232d;text-align:left;font:inherit;cursor:pointer}.languageFlagMenu button span{font-size:21px}.languageFlagMenu button:hover,.languageFlagMenu button.active{background:#eef5fa}.dark .languageFlagButton,.dark .languageFlagMenu{background:#101820;border-color:#3a4b58}.dark .languageFlagMenu button{color:#e7edf2}.dark .languageFlagMenu button:hover,.dark .languageFlagMenu button.active{background:#263844}
+
+
+/* Desktop login language placement; keep mobile layout unchanged */
+@media(min-width:701px){
+  .loginCard{position:relative}
+  .loginLanguageFlag{position:absolute;top:18px;right:18px;margin:0;z-index:35}
+  .languageFlagButton{width:48px;height:38px;font-size:25px;border-radius:10px}
+  .languageFlagMenu{top:44px;left:auto;right:0;transform:none}
+}

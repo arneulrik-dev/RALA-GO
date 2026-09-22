@@ -183,3 +183,12 @@ html:not(.dark) .loginCard .brand img{filter:drop-shadow(0 0 0 #10263b) contrast
 .privateEntry{margin-top:16px;display:flex;flex-direction:column;gap:10px;align-items:center}.privateEntry>span{font-size:11px;opacity:.55;font-weight:800;letter-spacing:.12em}.privateEntryButton{width:100%;padding:14px;border:2px solid currentColor;border-radius:14px;background:transparent;display:grid;grid-template-columns:auto 1fr;column-gap:8px;text-align:left;align-items:center}.privateEntryButton>b{font-size:16px}.privateEntryButton>small{grid-column:2;opacity:.7}
 
 .catalogCartBar{position:fixed;left:50%;bottom:18px;transform:translateX(-50%);z-index:70;width:min(620px,calc(100% - 24px));border:0;border-radius:18px;padding:13px 16px;box-shadow:0 10px 35px rgba(0,0,0,.22);background:#111;color:#fff;display:flex;align-items:center;justify-content:space-between;gap:14px;cursor:pointer}.catalogCartBar>span{display:grid;grid-template-columns:auto auto;column-gap:7px;text-align:left;align-items:center}.catalogCartBar small{grid-column:2;opacity:.72}.catalogCartBar strong{white-space:nowrap}.dark .catalogCartBar{background:#fff;color:#111}@media(max-width:620px){.catalogCartBar{bottom:10px;border-radius:15px;padding:12px 14px}}
+
+
+/* Mobile localization: allow longer translated private-customer labels to wrap cleanly */
+.workerWorkplaceDisplay{overflow-wrap:anywhere;word-break:normal;white-space:normal;line-height:1.3}
+@media(max-width:600px){
+  .workerWorkplaceDisplay{padding:13px 14px;min-height:48px}
+  .workerActions>button>b{overflow-wrap:anywhere;line-height:1.15}
+  .moreMenu{width:min(260px,calc(100vw - 28px))}
+}

@@ -221,3 +221,7 @@ html:not(.dark) .loginCard .brand img{filter:drop-shadow(0 0 0 #10263b) contrast
   .languageFlagButton{width:48px;height:38px;font-size:25px;border-radius:10px}
   .languageFlagMenu{top:44px;left:auto;right:0;transform:none}
 }
+
+
+/* RALA GO role-based help manual */
+.helpModal{width:min(760px,94vw);max-height:88vh;overflow:auto}.helpGuideTabs{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 18px}.helpGuideTabs button{border:1px solid #d5dfe6;border-radius:999px;padding:9px 13px;background:transparent;color:inherit;font:inherit;font-weight:700;cursor:pointer}.helpGuideTabs button.active{background:#168eea;color:#fff;border-color:#168eea}.helpContent{line-height:1.55}.helpContent h4{margin:20px 0 7px}.helpContent ol{padding-left:22px}.helpContent li{margin:7px 0}.helpContent p{margin:8px 0}.dark .helpGuideTabs button{border-color:#3a4b58}.dark .helpGuideTabs button.active{border-color:#168eea}

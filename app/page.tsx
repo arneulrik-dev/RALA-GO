@@ -5,9 +5,9 @@ import type {FormEvent} from "react";
 import {supabase,setRememberPreference} from "../lib/supabase";
 type Product={name:string;brand:string;category:string;description:string;price:string;image?:string};
 const products:Product[]=[
-{name:"NORDIC Truck Cleaner",brand:"NORDIC",category:"Rengjøring",description:"Kraftig alkalisk vask for kjøretøy, maskiner og industri",price:"349 kr"},
-{name:"NORDIC Snow Foam",brand:"NORDIC",category:"Rengjøring",description:"Skummende forvask for kjøretøy og utstyr",price:"299 kr"},
-{name:"NORDIC Avfetting",brand:"NORDIC",category:"Rengjøring",description:"Avfetting for olje, fett og krevende smuss",price:"Fra 249 kr"},
+{name:"RALA Truck Cleaner",brand:"RALA",category:"Rengjøring",description:"Kraftig alkalisk vask for kjøretøy, maskiner og industri",price:"349 kr"},
+{name:"RALA Snow Foam",brand:"RALA",category:"Rengjøring",description:"Skummende forvask for kjøretøy og utstyr",price:"299 kr"},
+{name:"RALA Avfetting",brand:"RALA",category:"Rengjøring",description:"Avfetting for olje, fett og krevende smuss",price:"Fra 249 kr"},
 {name:"Bahco 9031 skiftenøkkel",brand:"Bahco",category:"Håndverktøy",description:"Justerbar skiftenøkkel for profesjonelt bruk",price:"Fra 499 kr",image:"https://prohandel.no/assets/img/1024/1024/bilder_nettbutikk/17b545e6e1c05db3130f57dd7c91ee69-image.jpeg"},
 {name:"Bahco håndsag",brand:"Bahco",category:"Håndverktøy",description:"Håndsag for tre og byggarbeid",price:"Fra 299 kr"},
 {name:"Bahco pipesett",brand:"Bahco",category:"Håndverktøy",description:"Pipesett for service og montasje",price:"Fra 1 290 kr"},
@@ -25,8 +25,8 @@ const products:Product[]=[
 {name:"SIGA Rissan 60",brand:"SIGA",category:"Tape & tetting",description:"Tape for permanent lufttett sammenføyning",price:"Fra 289 kr"},
 {name:"SIGA Wigluv",brand:"SIGA",category:"Tape & tetting",description:"Vindtett tape for utvendige skjøter",price:"Fra 329 kr"},
 {name:"Wolf hørselvern",brand:"Wolf",category:"HMS",description:"Profesjonelt hørselvern for byggeplass",price:"Fra 1 990 kr"},
-{name:"Vernebriller klar",brand:"NORDIC",category:"HMS",description:"Lette vernebriller for arbeid og montasje",price:"Fra 99 kr"},
-{name:"Arbeidshansker Pro",brand:"NORDIC",category:"HMS",description:"Slitesterke hansker for bygg og anlegg",price:"Fra 79 kr"},
+{name:"Vernebriller klar",brand:"RALA",category:"HMS",description:"Lette vernebriller for arbeid og montasje",price:"Fra 99 kr"},
+{name:"Arbeidshansker Pro",brand:"RALA",category:"HMS",description:"Slitesterke hansker for bygg og anlegg",price:"Fra 79 kr"},
 {name:"Gutter Cover",brand:"Gutter Cover Nordic",category:"Tak & fasade",description:"Beskyttelse av takrenner mot løv og rusk",price:"590 kr/m"},
 {name:"Diamantblad 125 mm",brand:"Proff",category:"Tilbehør",description:"Kappeskive for betong og mur",price:"Fra 349 kr"},
 {name:"SDS-plus betongbor",brand:"Proff",category:"Tilbehør",description:"Bor for betong og murverk",price:"Fra 129 kr"},
@@ -76,9 +76,9 @@ de:{button:"▣ QR scannen",title:"Produkt scannen",intro:"Scanne den QR-Code de
 const productI18n:any={
 "Rengjøring":{da:"Rengøring",sv:"Rengöring",pl:"Czyszczenie",en:"Cleaning",de:"Reinigung"},"Håndverktøy":{da:"Håndværktøj",sv:"Handverktyg",pl:"Narzędzia ręczne",en:"Hand tools",de:"Handwerkzeuge"},"Elektroverktøy":{da:"Elværktøj",sv:"Elverktyg",pl:"Elektronarzędzia",en:"Power tools",de:"Elektrowerkzeuge"},"Måleverktøy":{da:"Måleværktøj",sv:"Mätverktyg",pl:"Narzędzia pomiarowe",en:"Measuring tools",de:"Messwerkzeuge"},"Festemidler":{da:"Befæstelse",sv:"Fästelement",pl:"Elementy złączne",en:"Fasteners",de:"Befestigungsmittel"},"Lim & fug":{da:"Lim & fuge",sv:"Lim & fog",pl:"Kleje i uszczelniacze",en:"Adhesives & sealants",de:"Klebstoffe & Dichtstoffe"},"Tape & tetting":{da:"Tape & tætning",sv:"Tejp & tätning",pl:"Taśmy i uszczelnianie",en:"Tape & sealing",de:"Klebebänder & Abdichtung"},"HMS":{da:"Arbejdsmiljø",sv:"Arbetsmiljö",pl:"BHP",en:"PPE & safety",de:"Arbeitsschutz"},"Tak & fasade":{da:"Tag & facade",sv:"Tak & fasad",pl:"Dach i elewacja",en:"Roof & facade",de:"Dach & Fassade"},"Tilbehør":{da:"Tilbehør",sv:"Tillbehör",pl:"Akcesoria",en:"Accessories",de:"Zubehör"},"Byggmateriell":{da:"Byggematerialer",sv:"Byggmaterial",pl:"Materiały budowlane",en:"Building materials",de:"Baumaterialien"}};
 const descriptionI18n:any={
-"NORDIC Truck Cleaner":{da:"Kraftig alkalisk vask til køretøjer, maskiner og industri",sv:"Kraftfull alkalisk rengöring för fordon, maskiner och industri",pl:"Silny alkaliczny środek do mycia pojazdów, maszyn i zastosowań przemysłowych",en:"Powerful alkaline cleaner for vehicles, machinery and industrial use",de:"Kraftvoller alkalischer Reiniger für Fahrzeuge, Maschinen und Industrie"},
-"NORDIC Snow Foam":{da:"Skummende forvask til køretøjer og udstyr",sv:"Skummande förtvätt för fordon och utrustning",pl:"Pieniący preparat do mycia wstępnego pojazdów i sprzętu",en:"Foaming pre-wash for vehicles and equipment",de:"Schäumende Vorwäsche für Fahrzeuge und Geräte"},
-"NORDIC Avfetting":{da:"Affedtning til olie, fedt og krævende snavs",sv:"Avfettning för olja, fett och svår smuts",pl:"Odtłuszczacz do oleju, smaru i trudnych zabrudzeń",en:"Degreaser for oil, grease and stubborn dirt",de:"Entfetter für Öl, Fett und hartnäckigen Schmutz"},
+"RALA Truck Cleaner":{da:"Kraftig alkalisk vask til køretøjer, maskiner og industri",sv:"Kraftfull alkalisk rengöring för fordon, maskiner och industri",pl:"Silny alkaliczny środek do mycia pojazdów, maszyn i zastosowań przemysłowych",en:"Powerful alkaline cleaner for vehicles, machinery and industrial use",de:"Kraftvoller alkalischer Reiniger für Fahrzeuge, Maschinen und Industrie"},
+"RALA Snow Foam":{da:"Skummende forvask til køretøjer og udstyr",sv:"Skummande förtvätt för fordon och utrustning",pl:"Pieniący preparat do mycia wstępnego pojazdów i sprzętu",en:"Foaming pre-wash for vehicles and equipment",de:"Schäumende Vorwäsche für Fahrzeuge und Geräte"},
+"RALA Avfetting":{da:"Affedtning til olie, fedt og krævende snavs",sv:"Avfettning för olja, fett och svår smuts",pl:"Odtłuszczacz do oleju, smaru i trudnych zabrudzeń",en:"Degreaser for oil, grease and stubborn dirt",de:"Entfetter für Öl, Fett und hartnäckigen Schmutz"},
 "Bahco 9031 skiftenøkkel":{da:"Justerbar skiftenøgle til professionel brug",sv:"Justerbar skiftnyckel för professionellt bruk",pl:"Klucz nastawny do zastosowań profesjonalnych",en:"Adjustable wrench for professional use",de:"Verstellbarer Schraubenschlüssel für den professionellen Einsatz"},
 "Bahco håndsag":{da:"Håndsav til træ og byggearbejde",sv:"Handsåg för trä- och byggarbete",pl:"Piła ręczna do drewna i prac budowlanych",en:"Hand saw for timber and construction work",de:"Handsäge für Holz- und Bauarbeiten"},
 "Bahco pipesett":{da:"Topnøglesæt til service og montage",sv:"Hylsnyckelsats för service och montering",pl:"Zestaw nasadek do serwisu i montażu",en:"Socket set for service and assembly",de:"Steckschlüsselsatz für Service und Montage"},
